@@ -1,0 +1,249 @@
+/* Reset
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;  
+}
+
+/* Site-wide  settings
+   ========================================================================== */
+body {
+  /* https://css-tricks.com/snippets/css/fluid-typography/ */
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color:#F2F2F2;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.main-navigation,
+.page-title-wrap,
+.page-wrapper {
+  /* border: 5px solid red; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  /* position: relative; */
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+}
+
+/* Header
+   ========================================================================== */
+.header {
+  position: relative;
+  padding-top: 5px;
+  /* margin: 0 auto; */
+}
+.header-bg-img {
+  background: top / cover no-repeat url('../images/wave-1817646_1920.svg') black;
+  /* max-height: vh; */
+}
+
+/* Main Navigation
+   ========================================================================== */
+.main-navigation {
+  /* padding: 10px; */
+  /* float: right; */
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  /* margin: 1em 0; */
+}
+.nav-links > li {
+  list-style: none;
+  padding: 1em;
+  /* display: inline-block; */
+}
+.nav-links:last-child {
+  padding-right: 0;
+}
+.nav-links a {
+  padding: 1em;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Page Title
+   ========================================================================== */
+.page-title-wrap {
+  margin-top: 25  0px;
+}
+.header-group {
+  /* margin-top: 250px; */
+  /* height: 50vh; */
+  padding: 20vh 0 25vh 0;
+}
+.header-group p, .header-group h1 {
+  color: lavender;
+}
+.header-group h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+.header-group p {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+/* Language Cards
+   ========================================================================== */
+.languages-cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 6em auto;
+  /* border: solid 2px red; */
+}
+/* flex-grow | flex-shring | flex-basis
+// https://stackoverflow.com/questions/29503227/how-to-make-flexbox-items-the-same-size */
+.languages-cards > * {
+  flex: 1 1 0px;
+}
+.text-wrapper {
+  padding-left: 5%;
+}
+.text-wrapper h2 {
+  font-size: 54px;
+  font-weight: 700;
+  color: #FF4826;
+}
+.text-wrapper p {
+  font-size: 24px;
+  font-weight: 300;
+}
+.image-wrapper {
+  position: relative;
+}
+.image-overlay::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, .7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.image-wrapper::after {
+  content: 'html';
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: lavender;
+  font-weight: 700;
+  /* clamp: min size | preferred size | max size */
+  /* font-size: clamp(8.75rem, 10vw, 8.75rem); */
+
+  /* max() set the largest most positive value */ 
+  font-size: max(140px, 10vw);
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+.image-overlay img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+  /* height: 100%; */
+}
+.languages-cards.css {
+  flex-direction: row-reverse;
+}
+.languages-cards.css .text-wrapper {
+  padding: 0 5% 0 0;
+}
+.languages-cards.css .text-wrapper > h2 {
+  color: #83A715;
+}
+.languages-cards.css .image-wrapper::after {
+  content: 'css';
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: #00FF9A;
+  font-weight: 700;
+  font-size: 140px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+/* Course Listings
+   ========================================================================== */
+.courses-html5 {
+  background-color: #F2F2F2;
+}
+
+.courses-html5 h2,
+.courses-html5 p {
+  text-align: center;
+}
+.courses-html5 h2 {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.courses-html5 > p {
+  margin-bottom: 3rem;
+  font-size: 26px;
+  font-weight: 700;
+}
+.courses-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.courses-list li {
+  max-width: 40%;
+  /* max-width: 285px;
+  border: solid 3px green; */
+}
+.courses-list li p {
+  text-align: left;
+}
+.courses-list > li h3 {
+  font-size: 27px;
+  font-weight: 900;
+}
+.courses-list > li p {
+  font-size: 24px;
+  font-weight: 300;
+}
+.courses-image-wrapper {
+  /* background: center / cover no-repeat url("../images/adult-code-coding-1181359.jpg"); */
+  /* height: 199px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
