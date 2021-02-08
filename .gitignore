@@ -9,3 +9,6 @@
 
 # System files
 .idea
+
+# VSCode
+.vscode/settings.json
